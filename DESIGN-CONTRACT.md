@@ -30,7 +30,8 @@ Hosts: KEEP archive photos only. DROP Canon IXUS 430 (CompactFlash). Do not repl
 - Voice: first person as the card. Marquee exact: I cost $499.99. I am 1GB. I am still here.
 - Footer: Not official SanDisk. Fees go to @SanDisk. Token address last.
 - Tokens: cream #EDE4D0, gold #C6A24A, ink #1A1612. Verdana body, IBM Plex Sans for 1GB and $499.99. Body / footer / credits floor at 12px.
-- GeoCities chrome may stay (760 table, gold 3px rule, visitor counter, ticker). Vortex wallpaper on the outside is allowed. No purple starfield, no Comic Sans as brand, no baby mascot, no 3D redraw of the card.
+- GeoCities chrome may stay (760 table, gold 3px rule, visitor counter, ticker). Hold `.site` at 760px (do not spill at 1440/1280). Vortex wallpaper on the outside is allowed. No purple starfield, no Comic Sans as brand, no baby mascot, no 3D redraw of the card.
+- Tab / apple-touch / shortcut icon is only `/brand/favicon-1gb.jpg` (1.0GB crop). `/brand/card-logo-1gb.jpg` is the 2004 mark and footer thumb. Do not recrop either.
 
 ## Shape
 
@@ -79,7 +80,8 @@ Caption every KEEP photo: Photo: [author] / Wikimedia Commons / [license] / [Fil
 - Price is the story; spec table lives under 2004 only
 - Hero asset ≤200KB, still the tighter 1.0GB vortex at 1500×500
 - Drawer KEEP files served ≤200KB; `.drawer-well .photo` is `object-fit: contain`
-- 48px 1.0GB crop still reads
+- 48px 1.0GB crop still reads; tab/apple/shortcut icons are that crop only
+- Cream book holds 760px at 1440 and 1280
 - Footer load-bearing
 - PR open, not merged
 - Checks green if the repo has them

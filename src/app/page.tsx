@@ -28,7 +28,7 @@ export default function Home() {
 
   return (
     <div className="wrap">
-      <table className="site" cellPadding={0} cellSpacing={0}>
+      <table className="site" width={760} cellPadding={0} cellSpacing={0}>
         <tbody>
           <tr>
             <td className="bar-ink pad-tight">

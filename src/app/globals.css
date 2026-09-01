@@ -64,11 +64,12 @@ a:hover {
 .wrap {
   padding: 28px 12px 56px;
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 .site {
   width: 760px;
-  max-width: 100%;
+  max-width: 760px;
   margin: 0 auto;
   border-collapse: collapse;
   table-layout: fixed;
@@ -81,6 +82,10 @@ a:hover {
 
 .site td {
   vertical-align: top;
+}
+
+.site table {
+  max-width: 100%;
 }
 
 .bar-ink {
@@ -470,6 +475,7 @@ h3 {
 .photo {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
   border: 2px solid var(--ink);
   background: #cfc6b0;
@@ -601,6 +607,7 @@ h3 {
 
   .site {
     width: 100%;
+    max-width: 100%;
     box-shadow:
       0 0 28px rgba(180, 8, 24, 0.3),
       4px 4px 0 rgba(0, 0, 0, 0.5);
