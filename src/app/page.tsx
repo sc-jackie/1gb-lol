@@ -43,8 +43,10 @@ export default function Home() {
               <div className="hero-vortex">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/brand/card-vortex-16x9.png"
-                  alt="Black and red vortex pulling SanDisk 1GB SD cards and NAND chips inward"
+                  src="/brand/card-banner-icon-3x1.png"
+                  alt="Original 1.0GB SanDisk SD card and NAND being pulled into a black and red vortex"
+                  width={1500}
+                  height={500}
                 />
               </div>
               <div className="hero-lock">
