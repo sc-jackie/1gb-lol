@@ -488,6 +488,10 @@ h3 {
     gap: 4px 0;
   }
 
+  .visitor-label {
+    display: none;
+  }
+
   .hero-mark {
     width: 132px;
   }
