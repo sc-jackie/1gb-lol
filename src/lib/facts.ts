@@ -12,6 +12,11 @@ export const SOURCES = {
     href: "https://legacy.dpreview.com/articles/2622488571/sandisk1gbsdcard",
     note: "Contemporary coverage of the 27 January 2004 ship date and $499.99 suggested retail price, reprinting the SanDisk announcement.",
   },
+  palminfocenter: {
+    label: "PalmInfocenter — SanDisk Ships 1 Gigabyte SD Card",
+    href: "https://www.palminfocenter.com/news/6482/sandisk-ships-1-gigabyte-sd-card/",
+    note: "27 January 2004. Notes the $499.99 SRP and that some online retailers were already offering the card around $389 that week.",
+  },
   engadget: {
     label: "Engadget — SanDisk's budget 2GB Secure Digital card",
     href: "https://www.engadget.com/2004-10-29-sandisks-budget-2gb-secure-digital-card.html",

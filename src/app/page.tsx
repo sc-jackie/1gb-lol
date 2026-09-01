@@ -43,25 +43,11 @@ export default function Home() {
               <div className="hero-vortex">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/brand/card-banner-icon-3x1.png"
-                  alt="Original 1.0GB SanDisk SD card and NAND being pulled into a black and red vortex"
+                  src="/brand/card-banner-icon-3x1.webp"
+                  alt="Original 1.0GB SanDisk SD card being pulled into a tighter vortex"
                   width={1500}
                   height={500}
                 />
-              </div>
-              <div className="hero-lock">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  className="hero-mark"
-                  src="/brand/card-logo-1gb.jpg"
-                  alt="Original 1.0GB SanDisk SD card"
-                  width={200}
-                  height={200}
-                />
-                <p className="hero-name">CARD</p>
-                <p className="hero-gig">1GB</p>
-                <p className="price">$499.99</p>
-                <p className="hero-shipped">Shipped 27 Jan 2004</p>
               </div>
             </td>
           </tr>
@@ -77,24 +63,18 @@ export default function Home() {
           </tr>
 
           <tr>
-            <td className="pad spec-wrap">
-              <table className="spec" cellPadding={0} cellSpacing={0}>
+            <td className="bar-gold pad-tight">
+              <table width="100%" cellPadding={0} cellSpacing={0}>
                 <tbody>
                   <tr>
-                    <th>Capacity</th>
-                    <td>1GB</td>
-                  </tr>
-                  <tr>
-                    <th>SRP</th>
-                    <td>$499.99</td>
-                  </tr>
-                  <tr>
-                    <th>Shipped</th>
-                    <td>27 Jan 2004</td>
-                  </tr>
-                  <tr>
-                    <th>Size</th>
-                    <td>postage stamp</td>
+                    <td className="nav">
+                      <a href="#y1988">1988</a>
+                      <a href="#sd">SD</a>
+                      <a href="#y2004">2004</a>
+                      <a href="#crash">Crash</a>
+                      <a href="#drawer">2026</a>
+                      <a href="#token">Token</a>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -102,53 +82,27 @@ export default function Home() {
           </tr>
 
           <tr>
-            <td className="pad">
+            <td className="chapter" id="y1988">
               <table
                 width="100%"
                 cellPadding={0}
                 cellSpacing={0}
-                className="stack-mobile"
+                className="chapter-row"
               >
                 <tbody>
                   <tr>
-                    <td className="col-left">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        className="photo"
-                        src="/photos/canon-ixus-430.jpg"
-                        alt="Canon Digital IXUS 430, 2004"
-                        width={360}
-                        height={235}
-                      />
-                      <p className="caption">
-                        Canon Digital IXUS 430, 14 Sep 2004. Alisdair
-                        McDiarmid.{" "}
-                        <a href="https://commons.wikimedia.org/wiki/File:Canon_IXUS_430.jpg">
-                          Wikimedia Commons
-                        </a>
-                        ,{" "}
-                        <a href="https://creativecommons.org/licenses/by/2.0/">
-                          CC BY 2.0
-                        </a>
-                        .
-                      </p>
+                    <td className="chapter-year">
+                      <span className="chapter-kicker">SunDisk</span>
+                      1988
                     </td>
-                    <td className="col-right">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        className="photo"
-                        src="/photos/canon-a520-sd-slot.jpg"
-                        alt="Canon PowerShot A520 SD slot"
-                        width={360}
-                        height={270}
-                      />
-                      <p className="caption">
-                        Canon PowerShot A520, SD door open. Luis Dantas, 13
-                        Jul 2007.{" "}
-                        <a href="https://commons.wikimedia.org/wiki/File:Canon_PowerShot_A520_06.jpg">
-                          Wikimedia Commons
-                        </a>
-                        , public domain.
+                    <td className="chapter-body">
+                      <p className="chapter-lede">I did not exist yet.</p>
+                      <p>
+                        Eli Harari, Sanjay Mehrotra, and Jack Yuan founded the
+                        company as SunDisk. They were proving flash could keep
+                        a photograph without a battery babysitting it. I was
+                        not in the bag.{" "}
+                        <a href={SOURCES.wikipedia.href}>Wikipedia, SanDisk</a>.
                       </p>
                     </td>
                   </tr>
@@ -158,8 +112,286 @@ export default function Home() {
           </tr>
 
           <tr>
-            <td className="pad community" id="drawer">
-              <p>Show the oldest card in your drawer.</p>
+            <td className="chapter" id="sd">
+              <table
+                width="100%"
+                cellPadding={0}
+                cellSpacing={0}
+                className="chapter-row"
+              >
+                <tbody>
+                  <tr>
+                    <td className="chapter-year">
+                      <span className="chapter-kicker">Format</span>
+                      SD
+                    </td>
+                    <td className="chapter-body">
+                      <p className="chapter-lede">
+                        I am this size. Postage stamp.
+                      </p>
+                      <p>
+                        I am the thin one. CompactFlash is my chunky cousin
+                        — thicker, pin-holed, always hogging the DSLR. I slid
+                        into the pocket cameras. 1GB was a landmark because a
+                        digital camera could finally stop pretending 64
+                        megabytes was a vacation.
+                      </p>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        className="photo photo-inline"
+                        src="/photos/compactflash-64mb.jpg"
+                        alt="64 MB CompactFlash card, 2004"
+                        width={360}
+                        height={197}
+                      />
+                      <p className="caption">
+                        64 MB CompactFlash, 23 May 2004. André Karwath.{" "}
+                        <a href="https://commons.wikimedia.org/wiki/File:CompactFlash.jpg">
+                          Wikimedia Commons
+                        </a>
+                        ,{" "}
+                        <a href="https://creativecommons.org/licenses/by-sa/2.5/">
+                          CC BY-SA 2.5
+                        </a>
+                        . I am not this card. I am thinner.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="chapter chapter-ship" id="y2004">
+              <table
+                width="100%"
+                cellPadding={0}
+                cellSpacing={0}
+                className="chapter-row"
+              >
+                <tbody>
+                  <tr>
+                    <td className="chapter-year">
+                      <span className="chapter-kicker">I ship</span>
+                      2004
+                    </td>
+                    <td className="chapter-body">
+                      <p className="chapter-lede">
+                        27 January 2004. I ship at{" "}
+                        <span className="plex-price">$499.99</span>.
+                      </p>
+                      <p className="price">$499.99</p>
+                      <p className="hero-gig">1GB</p>
+                      <table
+                        width="100%"
+                        cellPadding={0}
+                        cellSpacing={0}
+                        className="stack-mobile ship-split"
+                      >
+                        <tbody>
+                          <tr>
+                            <td className="col-left">
+                              <table
+                                className="spec"
+                                cellPadding={0}
+                                cellSpacing={0}
+                              >
+                                <tbody>
+                                  <tr>
+                                    <th>Capacity</th>
+                                    <td>1GB</td>
+                                  </tr>
+                                  <tr>
+                                    <th>SRP</th>
+                                    <td>$499.99</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Shipped</th>
+                                    <td>27 Jan 2004</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Size</th>
+                                    <td>postage stamp</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                            <td className="col-right">
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                className="mark-photo"
+                                src="/brand/card-logo-1gb.jpg"
+                                alt="Original 1.0GB SanDisk SD card"
+                                width={240}
+                                height={240}
+                              />
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p>
+                        First production 1GB Secure Digital card.{" "}
+                        <a href={SOURCES.dpreview.href}>DPReview</a> reprints
+                        the Sunnyvale announcement from that week. They said I
+                        could hold a thousand high-resolution pictures. They
+                        also said I cost $499.99. That last part is the joke I
+                        cannot stop telling.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="chapter" id="crash">
+              <table
+                width="100%"
+                cellPadding={0}
+                cellSpacing={0}
+                className="chapter-row"
+              >
+                <tbody>
+                  <tr>
+                    <td className="chapter-year">
+                      <span className="chapter-kicker">The crash</span>
+                      OCT
+                    </td>
+                    <td className="chapter-body">
+                      <p className="chapter-lede">
+                        Cousins got bigger. I stayed 1GB.
+                      </p>
+                      <p>
+                        Week one, some shops already had me around $389.{" "}
+                        <a href={SOURCES.palminfocenter.href}>
+                          PalmInfocenter, 27 January 2004
+                        </a>
+                        . By 29 October 2004,{" "}
+                        <a href={SOURCES.engadget.href}>Engadget</a> said you
+                        could pick me up for around $65. Nine months. I did
+                        not grow. They did.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="chapter" id="drawer">
+              <table
+                width="100%"
+                cellPadding={0}
+                cellSpacing={0}
+                className="chapter-row"
+              >
+                <tbody>
+                  <tr>
+                    <td className="chapter-year">
+                      <span className="chapter-kicker">Drawer</span>
+                      2026
+                    </td>
+                    <td className="chapter-body community">
+                      <p className="chapter-lede">I am still here.</p>
+                      <p>
+                        I live in a drawer now. Next to a dead CR2, a USB
+                        cable that only charges, and someone&apos;s wedding
+                        photos that never got copied off.
+                      </p>
+                      <p className="ask">
+                        Show the oldest card in your drawer.
+                      </p>
+                      <table
+                        width="100%"
+                        cellPadding={0}
+                        cellSpacing={0}
+                        className="stack-mobile"
+                      >
+                        <tbody>
+                          <tr>
+                            <td className="col-left">
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                className="photo"
+                                src="/photos/canon-ixus-430.jpg"
+                                alt="Canon Digital IXUS 430, 2004"
+                                width={360}
+                                height={235}
+                              />
+                              <p className="caption">
+                                Canon Digital IXUS 430, 14 Sep 2004. Alisdair
+                                McDiarmid.{" "}
+                                <a href="https://commons.wikimedia.org/wiki/File:Canon_IXUS_430.jpg">
+                                  Wikimedia Commons
+                                </a>
+                                ,{" "}
+                                <a href="https://creativecommons.org/licenses/by/2.0/">
+                                  CC BY 2.0
+                                </a>
+                                .
+                              </p>
+                            </td>
+                            <td className="col-right">
+                              {/* eslint-disable-next-line @next/next/no-img-element */}
+                              <img
+                                className="photo"
+                                src="/photos/canon-a520-sd-slot.jpg"
+                                alt="Canon PowerShot A520 SD slot"
+                                width={360}
+                                height={270}
+                              />
+                              <p className="caption">
+                                Canon PowerShot A520, SD door open. Luis
+                                Dantas, 13 Jul 2007.{" "}
+                                <a href="https://commons.wikimedia.org/wiki/File:Canon_PowerShot_A520_06.jpg">
+                                  Wikimedia Commons
+                                </a>
+                                , public domain.
+                              </p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="chapter" id="token">
+              <table
+                width="100%"
+                cellPadding={0}
+                cellSpacing={0}
+                className="chapter-row"
+              >
+                <tbody>
+                  <tr>
+                    <td className="chapter-year">
+                      <span className="chapter-kicker">Token</span>
+                      NOW
+                    </td>
+                    <td className="chapter-body">
+                      <p className="chapter-lede">
+                        Not official. Fees to{" "}
+                        <a href={SANDISK_X_URL}>@SanDisk</a>.
+                      </p>
+                      <p>
+                        Someone put my measurements on{" "}
+                        <a href={LONG_XYZ_URL}>long.xyz</a>. I did not ask. I
+                        am flattered in the way a museum gift-shop magnet is
+                        flattered. This site is not SanDisk. There is no
+                        partnership. I do not keep a cut. I am plastic.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
           </tr>
 
@@ -169,6 +401,12 @@ export default function Home() {
                 <li>
                   <a href={SOURCES.dpreview.href}>{SOURCES.dpreview.label}</a>
                   . {SOURCES.dpreview.note}
+                </li>
+                <li>
+                  <a href={SOURCES.palminfocenter.href}>
+                    {SOURCES.palminfocenter.label}
+                  </a>
+                  . {SOURCES.palminfocenter.note}
                 </li>
                 <li>
                   <a href={SOURCES.engadget.href}>{SOURCES.engadget.label}</a>
@@ -194,7 +432,7 @@ export default function Home() {
           </tr>
 
           <tr>
-            <td className="pad token" id="token">
+            <td className="pad token" id="address">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 className="token-thumb"
