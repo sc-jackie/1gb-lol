@@ -27,7 +27,10 @@ export const metadata: Metadata = {
     url: "https://1gb.lol",
     siteName: "1gb.lol",
     type: "website",
-    images: [{ url: "/brand/card-logo-1gb.jpg", width: 774, height: 774 }],
+    images: [
+      { url: "/brand/card-vortex-16x9.png", width: 1536, height: 864 },
+      { url: "/brand/card-logo-1gb.jpg", width: 1024, height: 1024 },
+    ],
   },
 };
 

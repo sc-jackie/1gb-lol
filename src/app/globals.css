@@ -14,16 +14,21 @@
 }
 
 html {
-  background: var(--cream);
+  background: #050000;
 }
 
 body {
   margin: 0;
   min-height: 100%;
   color: var(--ink);
-  background-color: var(--cream);
-  background-image: url("/tile.svg");
-  background-repeat: repeat;
+  background-color: #050000;
+  background-image:
+    linear-gradient(rgba(5, 0, 0, 0.38), rgba(5, 0, 0, 0.52)),
+    url("/brand/card-vortex-16x9.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 14px;
   line-height: 1.55;
@@ -48,13 +53,13 @@ a:hover {
     to bottom,
     transparent 0,
     transparent 2px,
-    rgba(26, 22, 18, 0.03) 2px,
-    rgba(26, 22, 18, 0.03) 3px
+    rgba(180, 8, 24, 0.06) 2px,
+    rgba(180, 8, 24, 0.06) 3px
   );
 }
 
 .wrap {
-  padding: 18px 10px 40px;
+  padding: 28px 12px 56px;
 }
 
 .site {
@@ -63,8 +68,10 @@ a:hover {
   margin: 0 auto;
   border-collapse: collapse;
   background: var(--cream);
-  border: 3px solid var(--ink);
-  box-shadow: 8px 8px 0 rgba(26, 22, 18, 0.18);
+  border: 3px solid var(--gold);
+  box-shadow:
+    0 0 48px rgba(180, 8, 24, 0.35),
+    8px 8px 0 rgba(0, 0, 0, 0.55);
 }
 
 .site td {
@@ -164,6 +171,15 @@ a:hover {
   padding: 18px 16px 14px;
 }
 
+.hero-mark {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin: 0 auto 12px;
+  border: 2px solid var(--ink);
+  background: #1a1612;
+}
+
 .hero-name {
   font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
   font-weight: 700;
@@ -198,12 +214,16 @@ a:hover {
 .hero-vortex {
   width: 100%;
   background: #050000;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
 }
 
 .hero-vortex img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .spec-wrap {
@@ -423,13 +443,19 @@ h3 {
 }
 
 @media (max-width: 800px) {
+  body {
+    background-attachment: scroll;
+  }
+
   .wrap {
-    padding: 8px 6px 28px;
+    padding: 10px 6px 36px;
   }
 
   .site {
     width: 100%;
-    box-shadow: 4px 4px 0 rgba(26, 22, 18, 0.18);
+    box-shadow:
+      0 0 28px rgba(180, 8, 24, 0.3),
+      4px 4px 0 rgba(0, 0, 0, 0.5);
   }
 
   .pad {

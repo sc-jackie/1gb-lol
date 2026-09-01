@@ -42,11 +42,19 @@ export default function Home() {
               <div className="hero-vortex">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/brand/card-banner-icon-3x1.png"
-                  alt="Original 1.0GB SanDisk SD card in front of a black and red vortex"
+                  src="/brand/card-vortex-16x9.png"
+                  alt="Black and red vortex pulling SanDisk 1GB SD cards and NAND chips inward"
                 />
               </div>
               <div className="hero-lock">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  className="hero-mark"
+                  src="/brand/card-logo-1gb.jpg"
+                  alt="Original 1.0GB SanDisk SD card"
+                  width={200}
+                  height={200}
+                />
                 <p className="hero-name">CARD</p>
                 <p className="hero-gig">1GB</p>
                 <p className="price">$499.99</p>
