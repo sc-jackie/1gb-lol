@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { CopyAddress } from "@/components/CopyAddress";
 import { VisitorCounter } from "@/components/VisitorCounter";
 import {
@@ -12,12 +13,39 @@ import {
   type KeepPhoto,
 } from "@/lib/facts";
 
-function Credit({ photo }: { photo: KeepPhoto }) {
+function creditLine(credit: string, href?: string): ReactNode {
+  if (!href) {
+    return credit;
+  }
+
+  const named = /^(.*?Photo: )(.+?)( \/ .*)$/.exec(credit);
+  if (named) {
+    return (
+      <>
+        {named[1]}
+        <a href={href}>{named[2]}</a>
+        {named[3]}
+      </>
+    );
+  }
+
+  const commons = "Wikimedia Commons";
+  const at = credit.indexOf(commons);
+  if (at === -1) {
+    return credit;
+  }
+
   return (
-    <p className="caption">
-      {photo.href ? <a href={photo.href}>{photo.credit}</a> : photo.credit}
-    </p>
+    <>
+      {credit.slice(0, at)}
+      <a href={href}>{commons}</a>
+      {credit.slice(at + commons.length)}
+    </>
   );
+}
+
+function Credit({ photo }: { photo: KeepPhoto }) {
+  return <p className="caption">{creditLine(photo.credit, photo.href)}</p>;
 }
 
 export default function Home() {
@@ -346,9 +374,7 @@ export default function Home() {
                       </p>
                       <p>
                         Token URL last:{" "}
-                        <a href={CARD_BLOCKSCOUT_URL}>
-                          {CARD_BLOCKSCOUT_URL}
-                        </a>
+                        <a href={CARD_BLOCKSCOUT_URL}>CARD</a>
                       </p>
                     </td>
                   </tr>
@@ -375,22 +401,20 @@ export default function Home() {
                   . {SOURCES.engadget.note}
                 </li>
                 <li>
-                  {SOURCES.cardBlockscout.label}:{" "}
                   <a href={SOURCES.cardBlockscout.href}>
-                    {SOURCES.cardBlockscout.note}
+                    {SOURCES.cardBlockscout.label}
                   </a>
                 </li>
                 <li>
-                  {SOURCES.sndkBlockscout.label}:{" "}
                   <a href={SOURCES.sndkBlockscout.href}>
-                    {SOURCES.sndkBlockscout.note}
+                    {SOURCES.sndkBlockscout.label}
                   </a>
                 </li>
                 <li>
-                  {SOURCES.robinhoodDocs.label}: {SOURCES.robinhoodDocs.note}{" "}
                   <a href={SOURCES.robinhoodDocs.href}>
-                    {SOURCES.robinhoodDocs.href}
+                    {SOURCES.robinhoodDocs.label}
                   </a>
+                  : {SOURCES.robinhoodDocs.note}
                 </li>
               </ol>
             </td>
