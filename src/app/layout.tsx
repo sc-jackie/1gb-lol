@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: "/brand/favicon-1gb.jpg", type: "image/jpeg", sizes: "96x96" },
-      { url: "/brand/card-logo-1gb.jpg", type: "image/jpeg" },
     ],
-    apple: [{ url: "/brand/card-logo-1gb.jpg" }],
+    shortcut: { url: "/brand/favicon-1gb.jpg", type: "image/jpeg" },
+    apple: [{ url: "/brand/favicon-1gb.jpg", type: "image/jpeg" }],
   },
   openGraph: {
     title: "CARD — I cost $499.99. I am 1GB. I am still here.",
