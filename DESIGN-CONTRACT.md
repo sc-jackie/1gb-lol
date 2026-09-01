@@ -16,16 +16,30 @@ Mode 2 visual + story pass. The live page was a spec sheet (marquee, table, two 
 
 One long page, six chapters. Spec sheet is a beat inside 2004, not the whole page.
 
-1. **1988 SunDisk.** I did not exist yet.
-2. **SD format.** I am this size. Postage stamp.
-3. **27 Jan 2004.** I ship at $499.99. Spec table lives here (Capacity / SRP / date / postage stamp) plus my photo.
-4. **Price crash.** Cousins got bigger. I stayed 1GB. Only cited stamps: $389 week one; Engadget Oct 2004 ~$65. Do not invent a 2026 1GB street price as $0.02.
-5. **Drawer, 2026.** I am still here. Ask: show the oldest card in your drawer. Existing credited Canon photos may stay.
+1. **1988 SunDisk.** I did not exist yet. Type + rule only. No founder paragraph until a pack pastes one.
+2. **SD format.** I am this size. Postage stamp. `memory-card-comparison.jpg` plus SD 32×24×2.1 mm vs CF Type I 43×36×3.3 mm. microSD is post-2004 millimetre context, not a 2004 product shot of CARD.
+3. **27 Jan 2004.** I ship at $499.99. Spec table lives here (Capacity / SRP / date / 2.1 mm / 30 hours / 1,000 stills / five hours MPEG-4 from SanDisk press only) plus the existing 1.0GB mark photo. Sharp 3D-SiP (two 512MB dice in 2.1 mm) is 2004 press language, not a new partnership.
+4. **Price crash.** Cousins got bigger. I stayed 1GB. Cited stamps only: CeBIT 2003 $329.99 projection (label as projection); SRP $499.99; week-of-ship around $389 unnamed shops; Engadget 29 Oct 2004 around $65. No curve. Do not invent a 2026 1GB street price as $0.02.
+5. **Drawer, 2026.** I am still here. Ask: show the oldest card in your drawer. The six KEEP camera/slot photos. Equal-height cells. Captions 12px floor, credits on the same baseline.
 6. **Token.** Not official. Fees to @SanDisk.
 
 ## Images
 
-Do not invent photographs. Use files already in the repo. Researchio is hunting archive photos in parallel; if a pack appears in the repo or a later comment, slot it in. Until then, chapters without a real photo are type + rule only.
+Paste only. Do not invent photographs. Do not replace the 1.0GB site mark.
+
+Researchio KEEP pack (`public/photos/`):
+
+- `canon-ixus-ii.jpg`
+- `canon-sd200.jpg`
+- `canon-ixus-40.jpg`
+- `nikon-coolpix-3200.jpg`
+- `panasonic-lumix-fz20.jpg`
+- `panasonic-lumix-fz20-sd-slot.jpg`
+- `memory-card-comparison.jpg`
+
+MUST DROP from the live page: Canon Digital IXUS 430 / PowerShot S410 (CompactFlash Type I, not SD). Do not recaption it as SD. Drop `canon-a520` if it is not in this KEEP list.
+
+Caption every KEEP photo: Photo: [author] / Wikimedia Commons / [license] / [File: URL]
 
 ## Out
 
@@ -34,7 +48,9 @@ Do not invent photographs. Use files already in the repo. Researchio is hunting 
 - Discord
 - Second marquee
 - Catalog 3:1 banner
-- Sharp / NAND die-stack / NPD lore
+- NPD lore
+- Invented prices or shot counts
+- Recropping the 48px favicon
 
 ## Acceptance
 

@@ -1,13 +1,31 @@
 import { CopyAddress } from "@/components/CopyAddress";
 import { VisitorCounter } from "@/components/VisitorCounter";
 import {
+  DRAWER_PHOTOS,
+  KEEP_PHOTOS,
   LONG_XYZ_URL,
   SANDISK_X_URL,
   SOURCES,
   TOKEN_ADDRESS,
+  type KeepPhoto,
 } from "@/lib/facts";
 
+function Credit({ photo }: { photo: KeepPhoto }) {
+  return (
+    <p className="caption">
+      {photo.lead} Photo: {photo.author} / Wikimedia Commons / {photo.license} /{" "}
+      <a href={photo.href}>{photo.href}</a>
+    </p>
+  );
+}
+
 export default function Home() {
+  const drawerRows = [
+    [DRAWER_PHOTOS[0], DRAWER_PHOTOS[1]],
+    [DRAWER_PHOTOS[2], DRAWER_PHOTOS[3]],
+    [DRAWER_PHOTOS[4], DRAWER_PHOTOS[5]],
+  ] as const;
+
   return (
     <div className="wrap">
       <table className="site" cellPadding={0} cellSpacing={0}>
@@ -54,10 +72,17 @@ export default function Home() {
 
           <tr>
             <td className="ticker-wrap">
-              <div className="ticker">
-                I cost $499.99. I am 1GB. I am still here. · I cost $499.99. I
-                am 1GB. I am still here. · I cost $499.99. I am 1GB. I am still
-                here. ·
+              <div className="ticker-track">
+                <span className="ticker">
+                  I cost $499.99. I am 1GB. I am still here. · I cost $499.99. I
+                  am 1GB. I am still here. · I cost $499.99. I am 1GB. I am
+                  still here. ·
+                </span>
+                <span className="ticker" aria-hidden="true">
+                  I cost $499.99. I am 1GB. I am still here. · I cost $499.99. I
+                  am 1GB. I am still here. · I cost $499.99. I am 1GB. I am
+                  still here. ·
+                </span>
               </div>
             </td>
           </tr>
@@ -97,13 +122,6 @@ export default function Home() {
                     </td>
                     <td className="chapter-body">
                       <p className="chapter-lede">I did not exist yet.</p>
-                      <p>
-                        Eli Harari, Sanjay Mehrotra, and Jack Yuan founded the
-                        company as SunDisk. They were proving flash could keep
-                        a photograph without a battery babysitting it. I was
-                        not in the bag.{" "}
-                        <a href={SOURCES.wikipedia.href}>Wikipedia, SanDisk</a>.
-                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -130,31 +148,18 @@ export default function Home() {
                         I am this size. Postage stamp.
                       </p>
                       <p>
-                        I am the thin one. CompactFlash is my chunky cousin
-                        — thicker, pin-holed, always hogging the DSLR. I slid
-                        into the pocket cameras. 1GB was a landmark because a
-                        digital camera could finally stop pretending 64
-                        megabytes was a vacation.
+                        SD: 32×24×2.1 mm. CompactFlash Type I: 43×36×3.3 mm.
+                        Millimetre context. I am the thin one.
                       </p>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        className="photo photo-inline"
-                        src="/photos/compactflash-64mb.jpg"
-                        alt="64 MB CompactFlash card, 2004"
-                        width={360}
-                        height={197}
+                        className="photo"
+                        src={KEEP_PHOTOS.comparison.src}
+                        alt={KEEP_PHOTOS.comparison.alt}
+                        width={KEEP_PHOTOS.comparison.width}
+                        height={KEEP_PHOTOS.comparison.height}
                       />
-                      <p className="caption">
-                        64 MB CompactFlash, 23 May 2004. André Karwath.{" "}
-                        <a href="https://commons.wikimedia.org/wiki/File:CompactFlash.jpg">
-                          Wikimedia Commons
-                        </a>
-                        ,{" "}
-                        <a href="https://creativecommons.org/licenses/by-sa/2.5/">
-                          CC BY-SA 2.5
-                        </a>
-                        . I am not this card. I am thinner.
-                      </p>
+                      <Credit photo={KEEP_PHOTOS.comparison} />
                     </td>
                   </tr>
                 </tbody>
@@ -212,7 +217,14 @@ export default function Home() {
                                   </tr>
                                   <tr>
                                     <th>Size</th>
-                                    <td>postage stamp</td>
+                                    <td>32×24×2.1 mm</td>
+                                  </tr>
+                                  <tr>
+                                    <th>Press</th>
+                                    <td>
+                                      30 hours / 1,000 stills / five hours
+                                      MPEG-4
+                                    </td>
                                   </tr>
                                 </tbody>
                               </table>
@@ -231,12 +243,14 @@ export default function Home() {
                         </tbody>
                       </table>
                       <p>
-                        First production 1GB Secure Digital card.{" "}
-                        <a href={SOURCES.dpreview.href}>DPReview</a> reprints
-                        the Sunnyvale announcement from that week. They said I
-                        could hold a thousand high-resolution pictures. They
-                        also said I cost $499.99. That last part is the joke I
-                        cannot stop telling.
+                        First production 1GB Secure Digital card. The{" "}
+                        <a href={SOURCES.dpreview.href}>
+                          Sunnyvale announcement
+                        </a>{" "}
+                        said Sharp 3D-SiP: two 512MB dice in 2.1 mm. That is
+                        2004 press language. It is not a partnership on this
+                        page. They also said I cost $499.99. That last part is
+                        the joke I cannot stop telling.
                       </p>
                     </td>
                   </tr>
@@ -264,14 +278,17 @@ export default function Home() {
                         Cousins got bigger. I stayed 1GB.
                       </p>
                       <p>
-                        Week one, some shops already had me around $389.{" "}
+                        <a href={SOURCES.cebit.href}>CeBIT 2003</a> projected
+                        $329.99. That was a projection. I shipped at $499.99.
+                        Week of ship, unnamed shops around $389 —{" "}
                         <a href={SOURCES.palminfocenter.href}>
                           PalmInfocenter, 27 January 2004
                         </a>
-                        . By 29 October 2004,{" "}
-                        <a href={SOURCES.engadget.href}>Engadget</a> said you
-                        could pick me up for around $65. Nine months. I did
-                        not grow. They did.
+                        .{" "}
+                        <a href={SOURCES.engadget.href}>
+                          Engadget, 29 October 2004
+                        </a>
+                        : around $65. No curve. I did not grow. They did.
                       </p>
                     </td>
                   </tr>
@@ -296,11 +313,6 @@ export default function Home() {
                     </td>
                     <td className="chapter-body community">
                       <p className="chapter-lede">I am still here.</p>
-                      <p>
-                        I live in a drawer now. Next to a dead CR2, a USB
-                        cable that only charges, and someone&apos;s wedding
-                        photos that never got copied off.
-                      </p>
                       <p className="ask">
                         Show the oldest card in your drawer.
                       </p>
@@ -308,51 +320,28 @@ export default function Home() {
                         width="100%"
                         cellPadding={0}
                         cellSpacing={0}
-                        className="stack-mobile"
+                        className="drawer-grid"
                       >
                         <tbody>
-                          <tr>
-                            <td className="col-left">
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img
-                                className="photo"
-                                src="/photos/canon-ixus-430.jpg"
-                                alt="Canon Digital IXUS 430, 2004"
-                                width={360}
-                                height={235}
-                              />
-                              <p className="caption">
-                                Canon Digital IXUS 430, 14 Sep 2004. Alisdair
-                                McDiarmid.{" "}
-                                <a href="https://commons.wikimedia.org/wiki/File:Canon_IXUS_430.jpg">
-                                  Wikimedia Commons
-                                </a>
-                                ,{" "}
-                                <a href="https://creativecommons.org/licenses/by/2.0/">
-                                  CC BY 2.0
-                                </a>
-                                .
-                              </p>
-                            </td>
-                            <td className="col-right">
-                              {/* eslint-disable-next-line @next/next/no-img-element */}
-                              <img
-                                className="photo"
-                                src="/photos/canon-a520-sd-slot.jpg"
-                                alt="Canon PowerShot A520 SD slot"
-                                width={360}
-                                height={270}
-                              />
-                              <p className="caption">
-                                Canon PowerShot A520, SD door open. Luis
-                                Dantas, 13 Jul 2007.{" "}
-                                <a href="https://commons.wikimedia.org/wiki/File:Canon_PowerShot_A520_06.jpg">
-                                  Wikimedia Commons
-                                </a>
-                                , public domain.
-                              </p>
-                            </td>
-                          </tr>
+                          {drawerRows.map((row) => (
+                            <tr key={row[0].src}>
+                              {row.map((photo) => (
+                                <td className="drawer-cell" key={photo.src}>
+                                  <div className="drawer-well">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                      className="photo"
+                                      src={photo.src}
+                                      alt={photo.alt}
+                                      width={photo.width}
+                                      height={photo.height}
+                                    />
+                                  </div>
+                                  <Credit photo={photo} />
+                                </td>
+                              ))}
+                            </tr>
+                          ))}
                         </tbody>
                       </table>
                     </td>
@@ -403,6 +392,10 @@ export default function Home() {
                   . {SOURCES.dpreview.note}
                 </li>
                 <li>
+                  <a href={SOURCES.cebit.href}>{SOURCES.cebit.label}</a>.{" "}
+                  {SOURCES.cebit.note}
+                </li>
+                <li>
                   <a href={SOURCES.palminfocenter.href}>
                     {SOURCES.palminfocenter.label}
                   </a>
@@ -411,12 +404,6 @@ export default function Home() {
                 <li>
                   <a href={SOURCES.engadget.href}>{SOURCES.engadget.label}</a>
                   . {SOURCES.engadget.note}
-                </li>
-                <li>
-                  <a href={SOURCES.wikipedia.href}>
-                    {SOURCES.wikipedia.label}
-                  </a>
-                  . {SOURCES.wikipedia.note}
                 </li>
               </ol>
             </td>
