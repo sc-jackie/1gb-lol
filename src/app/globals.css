@@ -156,6 +156,43 @@ a:hover {
 .hero {
   padding: 0;
   background: #000;
+  text-align: center;
+}
+
+.hero-lock {
+  background: var(--cream);
+  padding: 18px 16px 14px;
+}
+
+.hero-name {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+
+.hero-gig {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.price {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: clamp(48px, 11vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 6px 0 8px;
+  color: var(--ink);
+}
+
+.hero-shipped {
+  margin: 0;
+  font-size: 14px;
 }
 
 .hero-vortex {
