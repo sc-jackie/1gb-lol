@@ -48,12 +48,12 @@ Paste only. Do not invent photographs. Do not replace the 1.0GB site mark.
 
 Researchio KEEP pack (`public/photos/`):
 
-- `canon-ixus-ii.jpg`
-- `canon-sd200.jpg`
-- `canon-ixus-40.jpg`
-- `nikon-coolpix-3200.jpg`
-- `panasonic-lumix-fz20.jpg`
-- `panasonic-lumix-fz20-sd-slot.jpg`
+- `canon-ixus-ii.webp`
+- `canon-sd200.webp`
+- `canon-ixus-40.webp`
+- `nikon-coolpix-3200.webp`
+- `panasonic-lumix-fz20.webp`
+- `panasonic-lumix-fz20-sd-slot.webp`
 - `memory-card-comparison.jpg`
 
 MUST DROP: Canon Digital IXUS 430 / PowerShot S410 (CompactFlash Type I, not SD). Do not recaption it as SD.
@@ -78,6 +78,7 @@ Caption every KEEP photo: Photo: [author] / Wikimedia Commons / [license] / [Fil
 - `DESIGN-CONTRACT.md` in the PR
 - Price is the story; spec table lives under 2004 only
 - Hero asset ≤200KB, still the tighter 1.0GB vortex at 1500×500
+- Drawer KEEP files served ≤200KB; `.drawer-well .photo` is `object-fit: contain`
 - 48px 1.0GB crop still reads
 - Footer load-bearing
 - PR open, not merged

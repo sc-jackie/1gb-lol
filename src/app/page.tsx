@@ -306,6 +306,7 @@ export default function Home() {
                                       alt={photo.alt}
                                       width={photo.width}
                                       height={photo.height}
+                                      loading="lazy"
                                     />
                                   </div>
                                   <Credit photo={photo} />
