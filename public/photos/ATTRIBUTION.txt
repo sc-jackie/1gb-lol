@@ -1,19 +1,51 @@
-canon-ixus-430.jpg
-  Canon Digital IXUS 430
-  Alisdair McDiarmid, 14 September 2004
-  https://commons.wikimedia.org/wiki/File:Canon_IXUS_430.jpg
-  CC BY 2.0
-  https://creativecommons.org/licenses/by/2.0/
-
-canon-a520-sd-slot.jpg
-  Canon PowerShot A520, SD card slot open
-  Luis Dantas, 13 July 2007
-  https://commons.wikimedia.org/wiki/File:Canon_PowerShot_A520_06.jpg
+canon-ixus-ii.jpg
+  Canon Digital IXUS II (PowerShot SD100)
+  David Gerard
+  https://commons.wikimedia.org/wiki/File:Canon_Ixus_II_front.jpg
   Public domain
 
-compactflash-64mb.jpg
-  64 MB CompactFlash card
-  André Karwath (Aka), 23 May 2004
-  https://commons.wikimedia.org/wiki/File:CompactFlash.jpg
+canon-sd200.jpg
+  Canon PowerShot SD200 (Digital IXUS 30)
+  MikeMurphy
+  https://commons.wikimedia.org/wiki/File:Canon_SD200.jpg
+  CC BY-SA 3.0
+  https://creativecommons.org/licenses/by-sa/3.0/
+
+canon-ixus-40.jpg
+  Canon Digital IXUS 40 (PowerShot SD300)
+  afrank99
+  https://commons.wikimedia.org/wiki/File:Canon_Digital_Ixus_40.jpg
   CC BY-SA 2.5
   https://creativecommons.org/licenses/by-sa/2.5/
+
+nikon-coolpix-3200.jpg
+  Nikon Coolpix 3200
+  Bluemoose
+  https://commons.wikimedia.org/wiki/File:Nikon_CoolPix_3200.jpg
+  CC BY-SA 2.0
+  https://creativecommons.org/licenses/by-sa/2.0/
+
+panasonic-lumix-fz20.jpg
+  Panasonic Lumix DMC-FZ20
+  Joachim Köhler
+  https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-FZ20_FrontView2.jpg
+  CC BY-SA 3.0
+  https://creativecommons.org/licenses/by-sa/3.0/
+
+panasonic-lumix-fz20-sd-slot.jpg
+  Panasonic Lumix DMC-FZ20 battery and SD slot
+  Joachim Köhler
+  https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-FZ20_BatteryCompartment_MemoryCardSlot.JPG
+  CC BY-SA 3.0
+  https://creativecommons.org/licenses/by-sa/3.0/
+
+memory-card-comparison.jpg
+  Size still: CompactFlash, SD, microSD
+  Evan-Amos
+  https://commons.wikimedia.org/wiki/File:Memory-card-comparison.jpg
+  Public domain
+
+Dropped from the live page (not SD hosts / not in the KEEP pack):
+  canon-ixus-430.jpg — Canon Digital IXUS 430 / PowerShot S410, CompactFlash Type I
+  canon-a520-sd-slot.jpg — not in the KEEP list
+  compactflash-64mb.jpg — replaced by memory-card-comparison.jpg
