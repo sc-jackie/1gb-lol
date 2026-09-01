@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CopyAddress } from "@/components/CopyAddress";
 import { VisitorCounter } from "@/components/VisitorCounter";
 import {
@@ -41,12 +42,13 @@ export default function Home() {
           <tr>
             <td className="hero">
               <div className="hero-vortex">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/brand/card-banner-icon-3x1.png"
+                <Image
+                  src="/brand/card-banner-icon-3x1.webp"
                   alt="Original 1.0GB SanDisk SD card and NAND being pulled into a black and red vortex"
                   width={1500}
                   height={500}
+                  preload
+                  sizes="(max-width: 800px) 100vw, 760px"
                 />
               </div>
               <div className="hero-lock">
@@ -112,13 +114,13 @@ export default function Home() {
                 <tbody>
                   <tr>
                     <td className="col-left">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <Image
                         className="photo"
-                        src="/photos/canon-ixus-430.jpg"
+                        src="/photos/canon-ixus-430.webp"
                         alt="Canon Digital IXUS 430, 2004"
-                        width={360}
-                        height={235}
+                        width={800}
+                        height={523}
+                        sizes="(max-width: 800px) 100vw, 360px"
                       />
                       <p className="caption">
                         Canon Digital IXUS 430, 14 Sep 2004. Alisdair
@@ -134,13 +136,13 @@ export default function Home() {
                       </p>
                     </td>
                     <td className="col-right">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
+                      <Image
                         className="photo"
-                        src="/photos/canon-a520-sd-slot.jpg"
+                        src="/photos/canon-a520-sd-slot.webp"
                         alt="Canon PowerShot A520 SD slot"
-                        width={360}
-                        height={270}
+                        width={800}
+                        height={600}
+                        sizes="(max-width: 800px) 100vw, 360px"
                       />
                       <p className="caption">
                         Canon PowerShot A520, SD door open. Luis Dantas, 13

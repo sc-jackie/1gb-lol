@@ -22,9 +22,7 @@ body {
   min-height: 100%;
   color: var(--ink);
   background-color: #050000;
-  background-image:
-    linear-gradient(rgba(5, 0, 0, 0.38), rgba(5, 0, 0, 0.52)),
-    url("/brand/card-vortex-16x9.png");
+  background-image: linear-gradient(rgba(5, 0, 0, 0.38), rgba(5, 0, 0, 0.52));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -32,6 +30,23 @@ body {
   font-family: Verdana, Geneva, sans-serif;
   font-size: 14px;
   line-height: 1.55;
+}
+
+body.has-atmosphere {
+  background-image:
+    linear-gradient(rgba(5, 0, 0, 0.38), rgba(5, 0, 0, 0.52)),
+    url("/brand/card-vortex-16x9.webp");
+}
+
+@supports (background-image: image-set(url("/x.avif") type("image/avif"))) {
+  body.has-atmosphere {
+    background-image:
+      linear-gradient(rgba(5, 0, 0, 0.38), rgba(5, 0, 0, 0.52)),
+      image-set(
+        url("/brand/card-vortex-16x9.avif") type("image/avif"),
+        url("/brand/card-vortex-16x9.webp") type("image/webp")
+      );
+  }
 }
 
 a {

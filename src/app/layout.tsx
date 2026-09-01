@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { IBM_Plex_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const plex = IBM_Plex_Sans({
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     siteName: "1gb.lol",
     type: "website",
     images: [
-      { url: "/brand/card-vortex-16x9.png", width: 1536, height: 864 },
+      { url: "/brand/card-vortex-16x9.webp", width: 1536, height: 864 },
       { url: "/brand/card-logo-1gb.jpg", width: 1024, height: 1024 },
     ],
   },
@@ -40,6 +41,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body>
         <div className="scanlines" aria-hidden="true" />
         {children}
+        <Script id="atmosphere" strategy="lazyOnload">
+          {`document.body.classList.add("has-atmosphere")`}
+        </Script>
+        <noscript>
+          <style>{`body{background-image:linear-gradient(rgba(5,0,0,.38),rgba(5,0,0,.52)),url("/brand/card-vortex-16x9.webp")}`}</style>
+        </noscript>
       </body>
     </html>
   );

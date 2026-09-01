@@ -46,8 +46,8 @@ No buy button. No fake market cap. No Discord, Telegram, or airdrop.
 ## Design lock
 
 - **Logo / hero mark:** photograph of the original 1.0GB SanDisk SD card (`public/brand/card-logo-1gb.jpg`). Not the One Gig flat pfp. At 48px the crop is the **1.0GB** type (`public/brand/favicon-1gb.jpg`).
-- **Hero:** 1500×500 tighter vortex (`public/brand/card-banner-icon-3x1.png`).
-- **Page atmosphere:** 16:9 vortex field behind the cream table (`public/brand/card-vortex-16x9.png`).
+- **Hero:** 1500×500 tighter vortex (`public/brand/card-banner-icon-3x1.webp`).
+- **Page atmosphere:** 16:9 vortex field behind the cream table (`public/brand/card-vortex-16x9.webp`).
 - Chrome: cream `#EDE4D0`, gold `#C6A24A`, ink `#1A1612`. Verdana body. Centered ~760px HTML table. Visitor counter.
 
 ## Photos
