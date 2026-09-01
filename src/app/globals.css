@@ -1,0 +1,393 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #ede4d0;
+  --cream-dark: #e0d4b8;
+  --gold: #c6a24a;
+  --gold-bright: #e0c36a;
+  --ink: #1a1612;
+  --ink-soft: #3a3228;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--cream);
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--ink);
+  background-color: var(--cream);
+  background-image: url("/tile.svg");
+  background-repeat: repeat;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--ink);
+  text-decoration-color: var(--gold);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--ink-soft);
+}
+
+.scanlines {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 2px,
+    rgba(26, 22, 18, 0.03) 2px,
+    rgba(26, 22, 18, 0.03) 3px
+  );
+}
+
+.wrap {
+  padding: 18px 10px 40px;
+}
+
+.site {
+  width: 760px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: var(--cream);
+  border: 3px solid var(--ink);
+  box-shadow: 8px 8px 0 rgba(26, 22, 18, 0.18);
+}
+
+.site td {
+  vertical-align: top;
+}
+
+.bar-ink {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.bar-gold {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.pad {
+  padding: 16px 22px;
+}
+
+.pad-tight {
+  padding: 8px 14px;
+}
+
+.brand {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.08em;
+  color: var(--cream);
+}
+
+.ie6 {
+  font-size: 10px;
+  color: var(--gold);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.nav a {
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  padding: 0 8px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--ink);
+}
+
+.ticker-wrap {
+  overflow: hidden;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--cream-dark);
+}
+
+.ticker {
+  display: block;
+  white-space: nowrap;
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  padding: 7px 0;
+  animation: ticker 22s linear infinite;
+}
+
+.hero {
+  text-align: center;
+  padding: 28px 22px 18px;
+}
+
+.slot {
+  width: 220px;
+  margin: 0 auto 18px;
+  padding: 18px 18px 0;
+  background: var(--ink);
+  border: 4px solid var(--ink);
+}
+
+.slot-lip {
+  height: 14px;
+  background: var(--gold);
+  margin: 10px -18px 0;
+}
+
+.card-slide {
+  animation: slide-in 1.1s ease-out both;
+}
+
+.price {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: clamp(48px, 11vw, 84px);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 10px 0 8px;
+  color: var(--ink);
+}
+
+.lede {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+.sub {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 10px;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+
+.rule {
+  height: 8px;
+  background: var(--gold);
+  border: none;
+  margin: 0;
+}
+
+.story p,
+.token p,
+.fees p,
+.community p,
+.disclaimer p {
+  margin: 0 0 12px;
+}
+
+.when {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--gold);
+  background: var(--ink);
+  display: inline-block;
+  padding: 2px 8px;
+  margin-bottom: 6px;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--ink);
+  background: #cfc6b0;
+}
+
+.caption {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 6px 0 0;
+  color: var(--ink-soft);
+}
+
+.caption a {
+  font-style: italic;
+}
+
+.address-box {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 10px 12px;
+  word-break: break-all;
+  border: 2px solid var(--gold);
+}
+
+.btn {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--gold);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--gold-bright);
+}
+
+.btn:active {
+  transform: translate(1px, 1px);
+}
+
+.counter {
+  font-family: var(--font-plex), "IBM Plex Sans", Verdana, sans-serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.12em;
+  background: var(--ink);
+  color: var(--gold);
+  padding: 3px 8px;
+  border: 1px solid var(--gold);
+}
+
+.sources ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sources li {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.footer {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.footer a {
+  color: var(--cream);
+  text-decoration-color: var(--gold);
+}
+
+.col-left {
+  width: 50%;
+  padding: 0 10px 0 0;
+}
+
+.col-right {
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(-36px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes gleam {
+  0%,
+  55% {
+    transform: translateX(-120%);
+  }
+  85%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@media (max-width: 800px) {
+  .wrap {
+    padding: 8px 6px 28px;
+  }
+
+  .site {
+    width: 100%;
+    box-shadow: 4px 4px 0 rgba(26, 22, 18, 0.18);
+  }
+
+  .pad {
+    padding: 14px 12px;
+  }
+
+  .ie6 {
+    white-space: normal;
+  }
+
+  .stack-mobile,
+  .stack-mobile tbody,
+  .stack-mobile tr {
+    display: block;
+    width: 100%;
+  }
+
+  .stack-mobile .col-left,
+  .stack-mobile .col-right {
+    display: block;
+    width: 100%;
+    padding: 0 0 14px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-slide,
+  .ticker,
+  .gleam {
+    animation: none;
+  }
+}
