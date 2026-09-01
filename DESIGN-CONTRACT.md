@@ -1,27 +1,46 @@
 # DESIGN CONTRACT — CARD / 1gb.lol
 
-Mode 2 visual + story pass. The live page was a spec sheet (marquee, table, two cameras). This pass is a full-scale 1GB card story. Do not invent a new brand.
+Mode 2 visual + story pass. Price is the story. Spec sheet is not the whole page, but it stays under 27 Jan 2004.
+
+## Marketio lock
+
+KILL:
+
+- 1988 / SunDisk / Harari / Wikipedia founder paragraph
+- Sharp 3D-SiP dice sentence. It is 2004 press, not the story. Do not print it.
+
+KEEP:
+
+- 2004 spec table as the 2004 beat
+- $499.99
+- $389 week-of-ship (unnamed shops)
+- Engadget 29 Oct 2004 around $65
+- Drawer ask
+- First person
+- Marquee
+- Footer not official
+
+Hosts: KEEP archive photos only. DROP Canon IXUS 430 (CompactFlash). Do not replace the 1.0GB mark. Compress hero ≤200KB. 48px favicon as-is.
 
 ## Locks
 
 - Mark is the original 1.0GB SanDisk SD photo (`/brand/card-logo-1gb.jpg`). Not the One Gig vector pfp.
-- 48px header/favicon is a tight crop of the type “1.0GB” on navy, no lavender letterbox. Live `/brand/favicon-1gb.jpg` already does this. Keep that meaning. Do not swap in a crop that shows the SanDisk wordmark or the lavender field.
-- Hero is the 1500×500 tighter vortex (`/brand/card-banner-icon-3x1.png`). Same picture. Compress it: do not ship a ~1–2MB PNG. Target ≤200KB (WebP or JPEG). Keep 1500×500.
+- 48px header/favicon is a tight crop of the type “1.0GB” on navy, no lavender letterbox. Live `/brand/favicon-1gb.jpg` already does this. Keep that meaning. Do not recrop.
+- Hero is the 1500×500 tighter vortex. Same picture. Served compressed ≤200KB (WebP). Keep 1500×500.
 - Voice: first person as the card. Marquee exact: I cost $499.99. I am 1GB. I am still here.
 - Footer: Not official SanDisk. Fees go to @SanDisk. Token address last.
-- Tokens: cream #EDE4D0, gold #C6A24A, ink #1A1612. Verdana body, IBM Plex Sans for 1GB and $499.99.
+- Tokens: cream #EDE4D0, gold #C6A24A, ink #1A1612. Verdana body, IBM Plex Sans for 1GB and $499.99. Body / footer / credits floor at 12px.
 - GeoCities chrome may stay (760 table, gold 3px rule, visitor counter, ticker). Vortex wallpaper on the outside is allowed. No purple starfield, no Comic Sans as brand, no baby mascot, no 3D redraw of the card.
 
 ## Shape
 
-One long page, six chapters. Spec sheet is a beat inside 2004, not the whole page.
+One long page. Spec sheet is a beat inside 2004, not the whole page.
 
-1. **1988 SunDisk.** I did not exist yet. Type + rule only. No founder paragraph until a pack pastes one.
-2. **SD format.** I am this size. Postage stamp. `memory-card-comparison.jpg` plus SD 32×24×2.1 mm vs CF Type I 43×36×3.3 mm. microSD is post-2004 millimetre context, not a 2004 product shot of CARD.
-3. **27 Jan 2004.** I ship at $499.99. Spec table lives here (Capacity / SRP / date / 2.1 mm / 30 hours / 1,000 stills / five hours MPEG-4 from SanDisk press only) plus the existing 1.0GB mark photo. Sharp 3D-SiP (two 512MB dice in 2.1 mm) is 2004 press language, not a new partnership.
-4. **Price crash.** Cousins got bigger. I stayed 1GB. Cited stamps only: CeBIT 2003 $329.99 projection (label as projection); SRP $499.99; week-of-ship around $389 unnamed shops; Engadget 29 Oct 2004 around $65. No curve. Do not invent a 2026 1GB street price as $0.02.
-5. **Drawer, 2026.** I am still here. Ask: show the oldest card in your drawer. The six KEEP camera/slot photos. Equal-height cells. Captions 12px floor, credits on the same baseline.
-6. **Token.** Not official. Fees to @SanDisk.
+1. **SD format.** I am this size. Postage stamp. `memory-card-comparison.jpg` plus SD 32×24×2.1 mm vs CF Type I 43×36×3.3 mm. microSD is post-2004 millimetre context, not a 2004 product shot of CARD.
+2. **27 Jan 2004.** I ship at $499.99. Spec table lives here (Capacity / SRP / date / size) plus the existing 1.0GB mark photo.
+3. **Price crash.** Cousins got bigger. I stayed 1GB. Cited stamps only: SRP $499.99; week-of-ship around $389 unnamed shops; Engadget 29 Oct 2004 around $65. No curve. Do not invent a 2026 1GB street price as $0.02.
+4. **Drawer, 2026.** I am still here. Ask: show the oldest card in your drawer. KEEP host/slot photos only. Equal-height cells. Captions 12px, credits on the same baseline.
+5. **Token.** Not official. Fees to @SanDisk.
 
 ## Images
 
@@ -37,12 +56,14 @@ Researchio KEEP pack (`public/photos/`):
 - `panasonic-lumix-fz20-sd-slot.jpg`
 - `memory-card-comparison.jpg`
 
-MUST DROP from the live page: Canon Digital IXUS 430 / PowerShot S410 (CompactFlash Type I, not SD). Do not recaption it as SD. Drop `canon-a520` if it is not in this KEEP list.
+MUST DROP: Canon Digital IXUS 430 / PowerShot S410 (CompactFlash Type I, not SD). Do not recaption it as SD.
 
 Caption every KEEP photo: Photo: [author] / Wikimedia Commons / [license] / [File: URL]
 
 ## Out
 
+- 1988 / SunDisk / Harari / Wikipedia founder paragraph
+- Sharp 3D-SiP dice sentence
 - New mascot
 - Partnership claim
 - Discord
@@ -55,11 +76,9 @@ Caption every KEEP photo: Photo: [author] / Wikimedia Commons / [license] / [Fil
 ## Acceptance
 
 - `DESIGN-CONTRACT.md` in the PR
-- Page reads as six story chapters
+- Price is the story; spec table lives under 2004 only
 - Hero asset ≤200KB, still the tighter 1.0GB vortex at 1500×500
 - 48px 1.0GB crop still reads
 - Footer load-bearing
 - PR open, not merged
 - Checks green if the repo has them
-
-You are free to reach a better layout than a taller spec table, as long as the locks hold. Hypothesis (non-binding): keep the cream table as the book, put each chapter as a row with a fat year in Plex, spec sheet only under 2004.

@@ -34,19 +34,20 @@ curl -fsS http://127.0.0.1:43127/health
 
 ## What is on the page
 
-One long page, six chapters. See `DESIGN-CONTRACT.md`.
+One long page. See `DESIGN-CONTRACT.md`. Price is the story.
 
-1. **1988 SunDisk** — I did not exist yet. Type + rule only.
-2. **SD format** — I am this size. Postage stamp. Size still + millimetres.
-3. **27 Jan 2004** — I ship at $499.99. Spec table and the card photo live here.
-4. **Price crash** — Cited stamps only: CeBIT 2003 $329.99 projection; SRP $499.99; week one ~$389; Engadget Oct 2004 ~$65.
-5. **Drawer, 2026** — I am still here. Six KEEP host/slot photos. Show the oldest card in your drawer.
-6. **Token** — Not official. Fees to @SanDisk.
+1. **SD format** — I am this size. Postage stamp. Size still + millimetres.
+2. **27 Jan 2004** — I ship at $499.99. Spec table and the card photo live here.
+3. **Price crash** — Cited stamps only: SRP $499.99; week one ~$389 unnamed shops; Engadget Oct 2004 ~$65.
+4. **Drawer, 2026** — I am still here. KEEP host/slot photos. Show the oldest card in your drawer.
+5. **Token** — Not official. Fees to @SanDisk.
+
+No 1988 / SunDisk / Harari / Wikipedia founder paragraph. No Sharp 3D-SiP dice sentence.
 
 - Marquee, unchanged: *I cost $499.99. I am 1GB. I am still here.*
 - Footer, unchanged: *Not official SanDisk. Fees go to @SanDisk.*
 - Token address last, under the footer, on [long.xyz](https://app.long.xyz/tokens/0xb4ba5b179709169ef917ea8d1a37633315ad1e18)
-- Sources: DPReview (Jan 2004 / $499.99 / press), TWICE (CeBIT 2003 projection), PalmInfocenter (week one / $389), Engadget (Oct 2004 / ~$65)
+- Sources: DPReview (Jan 2004 / $499.99), PalmInfocenter (week one / $389), Engadget (Oct 2004 / ~$65)
 
 No buy button. No fake market cap. No Discord, Telegram, or airdrop.
 
