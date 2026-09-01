@@ -1,5 +1,4 @@
 import { CopyAddress } from "@/components/CopyAddress";
-import { OneGigCard } from "@/components/OneGigCard";
 import { VisitorCounter } from "@/components/VisitorCounter";
 import {
   LONG_XYZ_URL,
@@ -18,7 +17,15 @@ export default function Home() {
               <table width="100%" cellPadding={0} cellSpacing={0}>
                 <tbody>
                   <tr>
-                    <td>
+                    <td className="brand-cell">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        className="logo-48"
+                        src="/brand/favicon-1gb.jpg"
+                        alt="1.0GB"
+                        width={48}
+                        height={48}
+                      />
                       <span className="brand">CARD</span>
                     </td>
                     <td className="ie6">
@@ -52,29 +59,49 @@ export default function Home() {
           </tr>
 
           <tr>
-            <td className="ticker-wrap">
-              <div className="ticker">
-                $499.99 → $65 → basically free · $499.99 → $65 → basically
-                free · $499.99 → $65 → basically free ·
+            <td className="hero">
+              <div className="hero-vortex">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/brand/card-banner-icon-3x1.png"
+                  alt="Original 1.0GB SanDisk SD card in front of a black and red vortex"
+                />
               </div>
             </td>
           </tr>
 
           <tr>
-            <td className="hero">
-              <div className="slot">
-                <div className="card-slide">
-                  <OneGigCard />
-                </div>
-                <div className="slot-lip" />
+            <td className="ticker-wrap">
+              <div className="ticker">
+                I cost $499.99. I am 1GB. I am still here. · I cost $499.99. I
+                am 1GB. I am still here. · I cost $499.99. I am 1GB. I am still
+                here. ·
               </div>
-              <p className="price">$499.99</p>
-              <p className="lede">I used to cost that.</p>
-              <p className="sub">
-                I am CARD. I am a 1GB SD card. I am not a company. I am not
-                official. I am the postage stamp that once cost a used Civic
-                payment.
-              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td className="pad spec-wrap">
+              <table className="spec" cellPadding={0} cellSpacing={0}>
+                <tbody>
+                  <tr>
+                    <th>capacity</th>
+                    <td>1GB</td>
+                  </tr>
+                  <tr>
+                    <th>SRP</th>
+                    <td>$499.99</td>
+                  </tr>
+                  <tr>
+                    <th>27 Jan 2004</th>
+                    <td>first production 1GB SD ships</td>
+                  </tr>
+                  <tr>
+                    <th>postage stamp</th>
+                    <td>that is my size</td>
+                  </tr>
+                </tbody>
+              </table>
             </td>
           </tr>
 
@@ -107,24 +134,20 @@ export default function Home() {
                 <span className="when">SD format</span>
                 <br />
                 Then comes the SD format, kept by the SD Association. I am
-                that format. CompactFlash is my chunky cousin — thicker,
-                pin-holed, always hogging the DSLR. I am the one that slid
-                into the thin cameras. 1GB was a landmark because a digital
-                camera could finally stop pretending 64 megabytes was a
-                vacation.
+                that format. CompactFlash is my chunky cousin. I am the
+                postage stamp. 1GB was a landmark because a digital camera
+                could finally stop pretending 64 megabytes was a vacation.
               </p>
 
               <p>
                 <span className="when">27 January 2004</span>
                 <br />I ship. First production 1GB Secure Digital card.
-                Suggested retail: the number on the hero. Contemporary
-                coverage on{" "}
+                Suggested retail: $499.99. Contemporary coverage on{" "}
                 <a href={SOURCES.dpreview.href}>DPReview</a> reprints the
                 SanDisk announcement from Sunnyvale that week. They said I
-                could hold a thousand high-resolution pictures, or thirty
-                hours of compressed music, or five hours of MPEG-4. They
-                also said I cost $499.99. That last part is the joke I
-                cannot stop telling.
+                could hold a thousand high-resolution pictures. They also
+                said I cost $499.99. That last part is the joke I cannot
+                stop telling.
               </p>
 
               <p>
@@ -161,7 +184,6 @@ export default function Home() {
                 <tbody>
                   <tr>
                     <td className="col-left">
-                      {/* Period photos: keep raw img for 2004 table layout */}
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         className="photo"
@@ -243,14 +265,18 @@ export default function Home() {
                       </p>
                     </td>
                     <td className="col-right">
-                      <p>
-                        CF held the SLRs. I held the pockets. By 2004 the
-                        argument was over in the compact cameras: if you
-                        wanted a thin body, you wanted me. I do not have a
-                        rights-clean picture of my original face that
-                        isn&apos;t wearing someone else&apos;s wordmark, so
-                        I drew myself. Beige body. Gold pins. Fat 1GB.
-                        That is the mascot. That is me.
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        className="photo token-face"
+                        src="/brand/card-logo-1gb.jpg"
+                        alt="Original 1.0GB SanDisk SD card, the CARD logo"
+                        width={360}
+                        height={360}
+                      />
+                      <p className="caption">
+                        Me. Original 1.0GB face, label intact. This
+                        photograph is the logo. It is not a partnership,
+                        and this site is not official.
                       </p>
                     </td>
                   </tr>
@@ -268,12 +294,29 @@ export default function Home() {
           <tr>
             <td className="pad token" id="token">
               <h2>I am also a contract now.</h2>
-              <p>
-                Someone put my measurements on{" "}
-                <a href={LONG_XYZ_URL}>long.xyz</a>. I am not selling
-                myself. I am telling you where I sit, the way a museum
-                label tells you the accession number.
-              </p>
+              <table width="100%" cellPadding={0} cellSpacing={0}>
+                <tbody>
+                  <tr>
+                    <td className="token-thumb-cell">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        className="token-thumb"
+                        src="/brand/card-logo-1gb.jpg"
+                        alt="Token image: original 1.0GB SanDisk SD card"
+                        width={96}
+                        height={96}
+                      />
+                    </td>
+                    <td>
+                      <p>
+                        Someone put my measurements on{" "}
+                        <a href={LONG_XYZ_URL}>long.xyz</a>. I am not
+                        selling myself. I am telling you where I sit.
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
               <p className="address-box">{TOKEN_ADDRESS}</p>
               <p>
                 <CopyAddress address={TOKEN_ADDRESS} />{" "}
@@ -281,9 +324,7 @@ export default function Home() {
               </p>
               <p>
                 All token fees go to SanDisk&apos;s account on X,{" "}
-                <a href={SANDISK_X_URL}>@SanDisk</a>. Nasdaq: SNDK. That
-                is the arrangement. I do not keep a cut. I could not spend
-                it if I did. I am plastic.
+                <a href={SANDISK_X_URL}>@SanDisk</a>. Nasdaq: SNDK.
               </p>
             </td>
           </tr>
@@ -292,17 +333,14 @@ export default function Home() {
             <td className="bar-gold pad fees" id="fees">
               <h2>The fees go to @SanDisk.</h2>
               <p>
-                Say it again, slower. Every fee on the token goes to{" "}
+                Every fee on the token goes to{" "}
                 <a href={SANDISK_X_URL}>@SanDisk</a> on X. Not to me. Not
-                to this page. Not to a Discord that does not exist.
-                SanDisk is a public company. Nasdaq: SNDK.
+                to this page. SanDisk is a public company. Nasdaq: SNDK.
               </p>
               <p>
-                This site is not SanDisk. This site is not a partner. This
-                site is a fan page about a card that used to cost $499.99.
-                If you want the company, they are{" "}
-                <a href={SANDISK_X_URL}>@SanDisk</a>. If you want me, I am
-                still in the drawer.
+                This site is not official. This site is not a partner. If
+                you want the company, they are{" "}
+                <a href={SANDISK_X_URL}>@SanDisk</a>.
               </p>
             </td>
           </tr>
@@ -312,9 +350,8 @@ export default function Home() {
               <h2>Show me the oldest card in your drawer.</h2>
               <p>
                 Community v1 is one prompt on X: post the oldest memory
-                card in your drawer. CF, SmartMedia, Memory Stick, a
-                mysterious miniSD in an adapter, me. Photograph it on a
-                kitchen table. That is the whole forum.
+                card in your drawer. Photograph it on a kitchen table.
+                That is the whole forum.
               </p>
               <p>
                 If a handle appears later it may be @og1gb. That handle is
@@ -351,10 +388,10 @@ export default function Home() {
                 </li>
               </ol>
               <p className="caption">
-                Photos on this page are downloaded from Wikimedia Commons
-                and captioned with author, date, and license. The cream
-                card with gold pins is a drawing. It is not a SanDisk
-                product shot and it does not use a SanDisk wordmark.
+                Period camera and CompactFlash photos are from Wikimedia
+                Commons, captioned with author, date, and license. The
+                logo is a photograph of the original 1.0GB card, used as
+                a fan-site mark, not as an official SanDisk lockup.
               </p>
             </td>
           </tr>
@@ -362,24 +399,12 @@ export default function Home() {
           <tr>
             <td className="bar-ink pad footer disclaimer" id="disclaimer">
               <p>
-                <strong>Not affiliated.</strong> 1gb.lol is an unofficial
-                fan site. There is no partnership, sponsorship,
-                endorsement, or license from SanDisk, Western Digital, the
-                SD Association, or Nasdaq. Names of companies and ticker
-                SNDK are used to talk about public history and a public
-                fee destination. They are not our logo.
-              </p>
-              <p>
-                Do not treat this page as SanDisk. Do not treat CARD as a
-                SanDisk spokesperson. The mascot is a beige SD card with a
-                gold contact row and the print &ldquo;1GB.&rdquo; All
-                token fees go to{" "}
+                Not official. 1gb.lol is an unofficial fan site. No
+                partnership, sponsorship, endorsement, or license from
+                SanDisk. All token fees go to{" "}
                 <a href={SANDISK_X_URL}>@SanDisk</a>. Nasdaq: SNDK.
               </p>
-              <p>
-                CARD · 1gb.lol · first person, first gigabyte · a 2004
-                story
-              </p>
+              <p>CARD · 1gb.lol · I cost $499.99. I am 1GB. I am still here.</p>
             </td>
           </tr>
         </tbody>

@@ -28,7 +28,9 @@ No buy button. No fake market cap. No Discord, Telegram, or airdrop.
 
 ## Design lock
 
-Cream `#EDE4D0`, gold `#C6A24A`, ink `#1A1612`. IBM Plex Sans for **1GB** and **$499.99**. Verdana body. Centered ~760px table. Tiled cream. Visitor counter. The card is the logo.
+Cream `#EDE4D0`, gold `#C6A24A`, ink `#1A1612` chrome. Verdana body. Centered ~760px table. Tiled cream. Visitor counter.
+
+Logo is the original 1.0GB SanDisk SD **photo** (`public/brand/card-logo-1gb.jpg`). At 48px the crop is the **1.0GB** type (`public/brand/favicon-1gb.jpg`). Hero is the 1500×500 black/red vortex banner (`public/brand/card-banner-icon-3x1.png`). Marquee: *I cost $499.99. I am 1GB. I am still here.*
 
 ## Photos
 
