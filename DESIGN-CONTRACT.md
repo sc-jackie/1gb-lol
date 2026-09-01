@@ -37,11 +37,11 @@ Hosts: KEEP archive photos only. DROP Canon IXUS 430 (CompactFlash). Do not repl
 
 One long page. Spec sheet is a beat inside 2004, not the whole page.
 
-1. **SD format.** I am this size. Postage stamp. `memory-card-comparison.jpg` plus SD 32×24×2.1 mm vs CF Type I 43×36×3.3 mm. microSD is post-2004 millimetre context, not a 2004 product shot of CARD.
-2. **27 Jan 2004.** I ship at $499.99. Spec table lives here (Capacity / SRP / date / size) plus the existing 1.0GB mark photo.
-3. **Price crash.** Cousins got bigger. I stayed 1GB. Cited stamps only: SRP $499.99; week-of-ship around $389 unnamed shops; Engadget 29 Oct 2004 around $65. No curve. Do not invent a 2026 1GB street price as $0.02.
-4. **Drawer, 2026.** I am still here. Ask: show the oldest card in your drawer. KEEP host/slot photos only. Equal-height cells. Captions 12px, credits on the same baseline.
-5. **Token.** Not official. Fees to @SanDisk.
+1. **SD format.** I am this size. Postage stamp. Size photo stays. Credit only. No CompactFlash millimetre paragraph.
+2. **27 Jan 2004.** 27 January 2004. $499.99. Spec table lives here (Capacity 1GB / SRP $499.99 / Shipped 27 Jan 2004 / Size postage stamp / Press 30 hours / 1,000 stills / five hours MPEG-4) plus the existing 1.0GB mark photo. mm is a Size footnote, not a paragraph.
+3. **Price crash.** $499.99. Week I shipped, $389. By 29 October 2004, $65. I did not get worse. Storage did.
+4. **Drawer, 2026.** Show the oldest card in your drawer. KEEP host/slot photos only. Credits only. No camera Wikipedia. Equal-height cells. Captions 12px, credits on the same baseline.
+5. **Token.** Sentence A, stamped. Community AMM vs RH contract. CARD address. Not equity. Not 1:1. Not redeemable. Not a partnership. Not official. Fees to @SanDisk. Token URL last. Copy-address / long.xyz stay in the footer, not the chapter body.
 
 ## Images
 
