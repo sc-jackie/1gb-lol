@@ -15,13 +15,7 @@ import {
 function Credit({ photo }: { photo: KeepPhoto }) {
   return (
     <p className="caption">
-      {photo.credit}
-      {photo.href ? (
-        <>
-          {" / "}
-          <a href={photo.href}>{photo.href}</a>
-        </>
-      ) : null}
+      {photo.href ? <a href={photo.href}>{photo.credit}</a> : photo.credit}
     </p>
   );
 }
