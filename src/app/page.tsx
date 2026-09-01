@@ -1,9 +1,11 @@
 import { CopyAddress } from "@/components/CopyAddress";
 import { VisitorCounter } from "@/components/VisitorCounter";
 import {
+  CARD_BLOCKSCOUT_URL,
   DRAWER_PHOTOS,
   KEEP_PHOTOS,
   LONG_XYZ_URL,
+  RH_SNDK_TOKEN_ADDRESS,
   SANDISK_X_URL,
   SOURCES,
   TOKEN_ADDRESS,
@@ -13,8 +15,13 @@ import {
 function Credit({ photo }: { photo: KeepPhoto }) {
   return (
     <p className="caption">
-      {photo.lead} Photo: {photo.author} / Wikimedia Commons / {photo.license} /{" "}
-      <a href={photo.href}>{photo.href}</a>
+      {photo.credit}
+      {photo.href ? (
+        <>
+          {" / "}
+          <a href={photo.href}>{photo.href}</a>
+        </>
+      ) : null}
     </p>
   );
 }
@@ -28,7 +35,7 @@ export default function Home() {
 
   return (
     <div className="wrap">
-      <table className="site" cellPadding={0} cellSpacing={0}>
+      <table className="site" width={760} cellPadding={0} cellSpacing={0}>
         <tbody>
           <tr>
             <td className="bar-ink pad-tight">
@@ -123,10 +130,6 @@ export default function Home() {
                       <p className="chapter-lede">
                         I am this size. Postage stamp.
                       </p>
-                      <p>
-                        SD: 32×24×2.1 mm. CompactFlash Type I: 43×36×3.3 mm.
-                        Millimetre context. I am the thin one.
-                      </p>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         className="photo"
@@ -159,7 +162,7 @@ export default function Home() {
                     </td>
                     <td className="chapter-body">
                       <p className="chapter-lede">
-                        27 January 2004. I ship at{" "}
+                        27 January 2004.{" "}
                         <span className="plex-price">$499.99</span>.
                       </p>
                       <p className="price">$499.99</p>
@@ -193,7 +196,11 @@ export default function Home() {
                                   </tr>
                                   <tr>
                                     <th>Size</th>
-                                    <td>32×24×2.1 mm</td>
+                                    <td>
+                                      postage stamp
+                                      <br />
+                                      32×24×2.1 mm
+                                    </td>
                                   </tr>
                                   <tr>
                                     <th>Press</th>
@@ -218,12 +225,6 @@ export default function Home() {
                           </tr>
                         </tbody>
                       </table>
-                      <p>
-                        First production 1GB Secure Digital card.{" "}
-                        <a href={SOURCES.dpreview.href}>DPReview</a> reprints
-                        the Sunnyvale announcement. They said I cost $499.99.
-                        That last part is the joke I cannot stop telling.
-                      </p>
                     </td>
                   </tr>
                 </tbody>
@@ -246,21 +247,16 @@ export default function Home() {
                       OCT
                     </td>
                     <td className="chapter-body">
-                      <p className="chapter-lede">
-                        Cousins got bigger. I stayed 1GB.
+                      <p className="chapter-lede">$499.99.</p>
+                      <p>
+                        Week I shipped,{" "}
+                        <a href={SOURCES.palminfocenter.href}>$389</a>.
                       </p>
                       <p>
-                        I shipped at $499.99. Week of ship, unnamed shops
-                        around $389 —{" "}
-                        <a href={SOURCES.palminfocenter.href}>
-                          PalmInfocenter, 27 January 2004
-                        </a>
-                        .{" "}
-                        <a href={SOURCES.engadget.href}>
-                          Engadget, 29 October 2004
-                        </a>
-                        : around $65. I did not grow. They did.
+                        By 29 October 2004,{" "}
+                        <a href={SOURCES.engadget.href}>$65</a>.
                       </p>
+                      <p>I did not get worse. Storage did.</p>
                     </td>
                   </tr>
                 </tbody>
@@ -283,7 +279,6 @@ export default function Home() {
                       2026
                     </td>
                     <td className="chapter-body community">
-                      <p className="chapter-lede">I am still here.</p>
                       <p className="ask">
                         Show the oldest card in your drawer.
                       </p>
@@ -306,6 +301,7 @@ export default function Home() {
                                       alt={photo.alt}
                                       width={photo.width}
                                       height={photo.height}
+                                      loading="lazy"
                                     />
                                   </div>
                                   <Credit photo={photo} />
@@ -338,15 +334,27 @@ export default function Home() {
                     </td>
                     <td className="chapter-body">
                       <p className="chapter-lede">
+                        I am a fan token in a public pool against Robinhood’s
+                        Sandisk Stock Token on Robinhood Chain — not Sandisk,
+                        not Robinhood, not a share.
+                      </p>
+                      <p>
+                        Community AMM vs RH contract {RH_SNDK_TOKEN_ADDRESS}.
+                      </p>
+                      <p>CARD {TOKEN_ADDRESS}.</p>
+                      <p>
+                        Not equity. Not 1:1. Not redeemable. Not a
+                        partnership.
+                      </p>
+                      <p>
                         Not official. Fees to{" "}
                         <a href={SANDISK_X_URL}>@SanDisk</a>.
                       </p>
                       <p>
-                        Someone put my measurements on{" "}
-                        <a href={LONG_XYZ_URL}>long.xyz</a>. I did not ask. I
-                        am flattered in the way a museum gift-shop magnet is
-                        flattered. This site is not SanDisk. There is no
-                        partnership. I do not keep a cut. I am plastic.
+                        Token URL last:{" "}
+                        <a href={CARD_BLOCKSCOUT_URL}>
+                          {CARD_BLOCKSCOUT_URL}
+                        </a>
                       </p>
                     </td>
                   </tr>
@@ -371,6 +379,24 @@ export default function Home() {
                 <li>
                   <a href={SOURCES.engadget.href}>{SOURCES.engadget.label}</a>
                   . {SOURCES.engadget.note}
+                </li>
+                <li>
+                  {SOURCES.cardBlockscout.label}:{" "}
+                  <a href={SOURCES.cardBlockscout.href}>
+                    {SOURCES.cardBlockscout.note}
+                  </a>
+                </li>
+                <li>
+                  {SOURCES.sndkBlockscout.label}:{" "}
+                  <a href={SOURCES.sndkBlockscout.href}>
+                    {SOURCES.sndkBlockscout.note}
+                  </a>
+                </li>
+                <li>
+                  {SOURCES.robinhoodDocs.label}: {SOURCES.robinhoodDocs.note}{" "}
+                  <a href={SOURCES.robinhoodDocs.href}>
+                    {SOURCES.robinhoodDocs.href}
+                  </a>
                 </li>
               </ol>
             </td>

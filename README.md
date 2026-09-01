@@ -36,11 +36,11 @@ curl -fsS http://127.0.0.1:43127/health
 
 One long page. See `DESIGN-CONTRACT.md`. Price is the story.
 
-1. **SD format** — I am this size. Postage stamp. Size still + millimetres.
-2. **27 Jan 2004** — I ship at $499.99. Spec table and the card photo live here.
-3. **Price crash** — Cited stamps only: SRP $499.99; week one ~$389 unnamed shops; Engadget Oct 2004 ~$65.
-4. **Drawer, 2026** — I am still here. KEEP host/slot photos. Show the oldest card in your drawer.
-5. **Token** — Not official. Fees to @SanDisk.
+1. **SD format** — I am this size. Postage stamp. Size still. Credit only.
+2. **27 Jan 2004** — 27 January 2004. $499.99. Spec table and the card photo live here.
+3. **Price crash** — $499.99. Week I shipped, $389. By 29 October 2004, $65. I did not get worse. Storage did.
+4. **Drawer, 2026** — Show the oldest card in your drawer. KEEP host/slot photos. Credits only.
+5. **Token** — Fan token vs Robinhood Sandisk Stock Token. Not a share. Fees to @SanDisk. Token URL last.
 
 No 1988 / SunDisk / Harari / Wikipedia founder paragraph. No Sharp 3D-SiP dice sentence.
 

@@ -1,38 +1,38 @@
-canon-ixus-ii.jpg
+canon-ixus-ii.webp
   Canon Digital IXUS II (PowerShot SD100)
   David Gerard
   https://commons.wikimedia.org/wiki/File:Canon_Ixus_II_front.jpg
   Public domain
 
-canon-sd200.jpg
+canon-sd200.webp
   Canon PowerShot SD200 (Digital IXUS 30)
   MikeMurphy
   https://commons.wikimedia.org/wiki/File:Canon_SD200.jpg
   CC BY-SA 3.0
   https://creativecommons.org/licenses/by-sa/3.0/
 
-canon-ixus-40.jpg
+canon-ixus-40.webp
   Canon Digital IXUS 40 (PowerShot SD300)
   afrank99
   https://commons.wikimedia.org/wiki/File:Canon_Digital_Ixus_40.jpg
   CC BY-SA 2.5
   https://creativecommons.org/licenses/by-sa/2.5/
 
-nikon-coolpix-3200.jpg
+nikon-coolpix-3200.webp
   Nikon Coolpix 3200
   Bluemoose
   https://commons.wikimedia.org/wiki/File:Nikon_CoolPix_3200.jpg
   CC BY-SA 2.0
   https://creativecommons.org/licenses/by-sa/2.0/
 
-panasonic-lumix-fz20.jpg
+panasonic-lumix-fz20.webp
   Panasonic Lumix DMC-FZ20
   Joachim Köhler
   https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-FZ20_FrontView2.jpg
   CC BY-SA 3.0
   https://creativecommons.org/licenses/by-sa/3.0/
 
-panasonic-lumix-fz20-sd-slot.jpg
+panasonic-lumix-fz20-sd-slot.webp
   Panasonic Lumix DMC-FZ20 battery and SD slot
   Joachim Köhler
   https://commons.wikimedia.org/wiki/File:Panasonic_Lumix_DMC-FZ20_BatteryCompartment_MemoryCardSlot.JPG
