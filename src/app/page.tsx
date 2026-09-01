@@ -93,35 +93,11 @@ export default function Home() {
                 <tbody>
                   <tr>
                     <td className="nav">
-                      <a href="#y1988">1988</a>
                       <a href="#sd">SD</a>
                       <a href="#y2004">2004</a>
                       <a href="#crash">Crash</a>
                       <a href="#drawer">2026</a>
                       <a href="#token">Token</a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-
-          <tr>
-            <td className="chapter" id="y1988">
-              <table
-                width="100%"
-                cellPadding={0}
-                cellSpacing={0}
-                className="chapter-row"
-              >
-                <tbody>
-                  <tr>
-                    <td className="chapter-year">
-                      <span className="chapter-kicker">SunDisk</span>
-                      1988
-                    </td>
-                    <td className="chapter-body">
-                      <p className="chapter-lede">I did not exist yet.</p>
                     </td>
                   </tr>
                 </tbody>
@@ -243,14 +219,10 @@ export default function Home() {
                         </tbody>
                       </table>
                       <p>
-                        First production 1GB Secure Digital card. The{" "}
-                        <a href={SOURCES.dpreview.href}>
-                          Sunnyvale announcement
-                        </a>{" "}
-                        said Sharp 3D-SiP: two 512MB dice in 2.1 mm. That is
-                        2004 press language. It is not a partnership on this
-                        page. They also said I cost $499.99. That last part is
-                        the joke I cannot stop telling.
+                        First production 1GB Secure Digital card.{" "}
+                        <a href={SOURCES.dpreview.href}>DPReview</a> reprints
+                        the Sunnyvale announcement. They said I cost $499.99.
+                        That last part is the joke I cannot stop telling.
                       </p>
                     </td>
                   </tr>
@@ -278,9 +250,8 @@ export default function Home() {
                         Cousins got bigger. I stayed 1GB.
                       </p>
                       <p>
-                        <a href={SOURCES.cebit.href}>CeBIT 2003</a> projected
-                        $329.99. That was a projection. I shipped at $499.99.
-                        Week of ship, unnamed shops around $389 —{" "}
+                        I shipped at $499.99. Week of ship, unnamed shops
+                        around $389 —{" "}
                         <a href={SOURCES.palminfocenter.href}>
                           PalmInfocenter, 27 January 2004
                         </a>
@@ -288,7 +259,7 @@ export default function Home() {
                         <a href={SOURCES.engadget.href}>
                           Engadget, 29 October 2004
                         </a>
-                        : around $65. No curve. I did not grow. They did.
+                        : around $65. I did not grow. They did.
                       </p>
                     </td>
                   </tr>
@@ -390,10 +361,6 @@ export default function Home() {
                 <li>
                   <a href={SOURCES.dpreview.href}>{SOURCES.dpreview.label}</a>
                   . {SOURCES.dpreview.note}
-                </li>
-                <li>
-                  <a href={SOURCES.cebit.href}>{SOURCES.cebit.label}</a>.{" "}
-                  {SOURCES.cebit.note}
                 </li>
                 <li>
                   <a href={SOURCES.palminfocenter.href}>

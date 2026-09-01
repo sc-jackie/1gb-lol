@@ -10,12 +10,7 @@ export const SOURCES = {
   dpreview: {
     label: "DPReview — SanDisk 1GB SD Card Ships",
     href: "https://legacy.dpreview.com/articles/2622488571/sandisk1gbsdcard",
-    note: "27 January 2004. Reprints the SanDisk announcement: $499.99 SRP, 2.1 mm stack, 30 hours of compressed music, 1,000 high-resolution stills, five hours of MPEG-4. Sharp 3D-SiP / two 512MB dice is 2004 press language in that announcement.",
-  },
-  cebit: {
-    label: "TWICE — SanDisk Targets Phones With New SD Format",
-    href: "https://www.twice.com/news/sandisk-targets-phones-new-sd-format-20069",
-    note: "20 March 2003, CeBIT Hannover. Projects the 1GB SD card at $329.99 for third-quarter 2003 availability. A projection, not a ship price.",
+    note: "27 January 2004. Reprints the SanDisk announcement: $499.99 SRP, 30 hours of compressed music, 1,000 high-resolution stills, five hours of MPEG-4.",
   },
   palminfocenter: {
     label: "PalmInfocenter — SanDisk Ships 1 Gigabyte SD Card",
