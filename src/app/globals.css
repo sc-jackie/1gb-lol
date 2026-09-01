@@ -98,6 +98,7 @@ a:hover {
 
 .brand-cell {
   white-space: nowrap;
+  width: 1%;
 }
 
 .logo-48 {
@@ -485,6 +486,18 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 4px 0;
+  }
+
+  .hero-mark {
+    width: 132px;
+  }
+
+  .hero-gig {
+    font-size: 36px;
+  }
+
+  .price {
+    font-size: 40px;
   }
 }
 

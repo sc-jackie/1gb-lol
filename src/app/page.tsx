@@ -29,7 +29,8 @@ export default function Home() {
                       <span className="brand">CARD</span>
                     </td>
                     <td align="right">
-                      You are visitor <VisitorCounter />
+                      <span className="visitor-label">You are visitor </span>
+                      <VisitorCounter />
                     </td>
                   </tr>
                 </tbody>
